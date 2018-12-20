@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A44AFCE9-018
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topshelf.Extensions.Hosting", "Topshelf.Extensions.Hosting\Topshelf.Extensions.Hosting.csproj", "{65E43EFA-CF14-49CA-A11D-2FE5B9301781}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunGenericHostAsTopshelfService", "RunGenericHostAsTopshelfService\RunGenericHostAsTopshelfService.csproj", "{119A6D95-E0E0-4348-B7DD-CDB8761E66BC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +21,17 @@ Global
 		{65E43EFA-CF14-49CA-A11D-2FE5B9301781}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65E43EFA-CF14-49CA-A11D-2FE5B9301781}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65E43EFA-CF14-49CA-A11D-2FE5B9301781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{119A6D95-E0E0-4348-B7DD-CDB8761E66BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{119A6D95-E0E0-4348-B7DD-CDB8761E66BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{119A6D95-E0E0-4348-B7DD-CDB8761E66BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{119A6D95-E0E0-4348-B7DD-CDB8761E66BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{65E43EFA-CF14-49CA-A11D-2FE5B9301781} = {A44AFCE9-018A-4C75-A1AB-A3627D911F12}
+		{119A6D95-E0E0-4348-B7DD-CDB8761E66BC} = {91E5BA7D-77B7-4935-AD2E-03021B30E4B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DE92892-FB53-4E59-B34D-F59DBB7E5149}
