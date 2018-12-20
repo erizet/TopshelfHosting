@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{91E5BA7D-77B7-4935-AD2E-03021B30E4B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A44AFCE9-018A-4C75-A1AB-A3627D911F12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topshelf.Extensions.Hosting", "Topshelf.Extensions.Hosting\Topshelf.Extensions.Hosting.csproj", "{65E43EFA-CF14-49CA-A11D-2FE5B9301781}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65E43EFA-CF14-49CA-A11D-2FE5B9301781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65E43EFA-CF14-49CA-A11D-2FE5B9301781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E43EFA-CF14-49CA-A11D-2FE5B9301781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65E43EFA-CF14-49CA-A11D-2FE5B9301781}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{65E43EFA-CF14-49CA-A11D-2FE5B9301781} = {A44AFCE9-018A-4C75-A1AB-A3627D911F12}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DE92892-FB53-4E59-B34D-F59DBB7E5149}
+	EndGlobalSection
+EndGlobal
