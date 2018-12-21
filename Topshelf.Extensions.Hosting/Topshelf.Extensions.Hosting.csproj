@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Authors>Erik Zetterqvist</Authors>
+    <Version>0.1.0</Version>
+    <Description>Runs a generic host as a Topshelf service.</Description>
+    <PackageProjectUrl>https://github.com/erizet/TopshelfHosting</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageTags>Topshelf Generic-host hosting</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
