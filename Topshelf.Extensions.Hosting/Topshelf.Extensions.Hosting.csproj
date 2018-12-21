@@ -8,6 +8,7 @@
     <PackageProjectUrl>https://github.com/erizet/TopshelfHosting</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>Topshelf Generic-host hosting</PackageTags>
+    <PackageLicenseUrl>LICENSE.md</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
