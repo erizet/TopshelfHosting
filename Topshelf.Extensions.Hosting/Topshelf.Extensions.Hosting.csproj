@@ -1,15 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Erik Zetterqvist</Authors>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <Description>Runs a generic host as a Topshelf service.</Description>
     <PackageProjectUrl>https://github.com/erizet/TopshelfHosting</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageTags>Topshelf Generic-host hosting</PackageTags>
     <PackageLicenseUrl>https://github.com/erizet/TopshelfHosting/blob/master/LICENSE</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+    <PackageReleaseNotes>Targets netstandard2.0</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
