@@ -1,15 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{91E5BA7D-77B7-4935-AD2E-03021B30E4B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A44AFCE9-018A-4C75-A1AB-A3627D911F12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topshelf.Extensions.Hosting", "Topshelf.Extensions.Hosting\Topshelf.Extensions.Hosting.csproj", "{65E43EFA-CF14-49CA-A11D-2FE5B9301781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Topshelf.Extensions.Hosting", "Topshelf.Extensions.Hosting\Topshelf.Extensions.Hosting.csproj", "{65E43EFA-CF14-49CA-A11D-2FE5B9301781}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunGenericHostAsTopshelfService", "RunGenericHostAsTopshelfService\RunGenericHostAsTopshelfService.csproj", "{119A6D95-E0E0-4348-B7DD-CDB8761E66BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RunGenericHostAsTopshelfService", "RunGenericHostAsTopshelfService\RunGenericHostAsTopshelfService.csproj", "{119A6D95-E0E0-4348-B7DD-CDB8761E66BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposeHostWhenServiceStopped", "DisposeHostWhenServiceStopped\DisposeHostWhenServiceStopped.csproj", "{184E8D49-576B-4F46-84D0-CD45D76800FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{119A6D95-E0E0-4348-B7DD-CDB8761E66BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{119A6D95-E0E0-4348-B7DD-CDB8761E66BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{119A6D95-E0E0-4348-B7DD-CDB8761E66BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184E8D49-576B-4F46-84D0-CD45D76800FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184E8D49-576B-4F46-84D0-CD45D76800FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184E8D49-576B-4F46-84D0-CD45D76800FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184E8D49-576B-4F46-84D0-CD45D76800FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{65E43EFA-CF14-49CA-A11D-2FE5B9301781} = {A44AFCE9-018A-4C75-A1AB-A3627D911F12}
 		{119A6D95-E0E0-4348-B7DD-CDB8761E66BC} = {91E5BA7D-77B7-4935-AD2E-03021B30E4B5}
+		{184E8D49-576B-4F46-84D0-CD45D76800FA} = {91E5BA7D-77B7-4935-AD2E-03021B30E4B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9DE92892-FB53-4E59-B34D-F59DBB7E5149}

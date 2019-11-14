@@ -30,24 +30,37 @@ namespace Topshelf.Extensions.Hosting
 
             hostBuilder.UseTopshelfLifetime();
 
-            var rc = HostFactory.Run(x =>
+            IHost host = null;
+            try
             {
-                configureTopshelfHost(x);
-                x.Service<IHost>((Action<Topshelf.ServiceConfigurators.ServiceConfigurator<IHost>>)(s =>
+                var rc = HostFactory.Run(x =>
                 {
-                    s.ConstructUsing(() => hostBuilder.Build());
-                    s.WhenStarted(service =>
+                    configureTopshelfHost(x);
+                    x.Service<IHost>((Action<Topshelf.ServiceConfigurators.ServiceConfigurator<IHost>>)(s =>
                     {
-                        service.Start();
-                    });
-                    s.WhenStopped(service =>
-                    {
-                        service.StopAsync();
-                    });
-                }));
-            });
+                        s.ConstructUsing(() =>
+                        {
+                            host = hostBuilder.Build();
+                            return host;
+                        });
+                        s.WhenStarted(service =>
+                        {
+                            service.Start();
+                        });
+                        s.WhenStopped(service =>
+                        {
+                            service.StopAsync().Wait();
+                        });
+                    }));
+                });
 
-            return rc;
+                return rc;
+            }
+            finally
+            {
+                if (host != null)
+                    host.Dispose();
+            }
         }
     }
 }
