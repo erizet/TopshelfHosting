@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>Erik Zetterqvist</Authors>
-    <Version>0.3.0</Version>
+    <Version>0.4.0</Version>
     <Description>Runs a generic host as a Topshelf service.</Description>
     <PackageProjectUrl>https://github.com/erizet/TopshelfHosting</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -13,7 +13,7 @@
     <ApplicationIcon />
     <OutputType>Library</OutputType>
     <StartupObject />
-    <PackageReleaseNotes>Disposes IHost</PackageReleaseNotes>
+    <PackageReleaseNotes>Start and stop callbacks.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>

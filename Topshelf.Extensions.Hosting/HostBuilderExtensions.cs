@@ -23,7 +23,11 @@ namespace Topshelf.Extensions.Hosting
         /// <param name="hostBuilder"></param>
         /// <param name="options">Configuration of the topshelf service.</param>
         /// <returns></returns>
-        public static TopshelfExitCode RunAsTopshelfService(this IHostBuilder hostBuilder, Action<HostConfigurators.HostConfigurator> configureTopshelfHost)
+        public static TopshelfExitCode RunAsTopshelfService(
+            this IHostBuilder hostBuilder, 
+            Action<HostConfigurators.HostConfigurator> configureTopshelfHost,
+            Action<IHost> beforeHostStarting = null,
+            Action<IHost> afterHostStopped = null)
         {
             if (configureTopshelfHost == null)
                 throw new ArgumentNullException(nameof(configureTopshelfHost));
@@ -45,11 +49,15 @@ namespace Topshelf.Extensions.Hosting
                         });
                         s.WhenStarted(service =>
                         {
+                            beforeHostStarting?.Invoke(service);
+
                             service.Start();
                         });
                         s.WhenStopped(service =>
                         {
                             service.StopAsync().Wait();
+
+                            afterHostStopped?.Invoke(service);
                         });
                     }));
                 });
