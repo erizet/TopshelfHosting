@@ -1,3 +1,4 @@
+![Build](https://github.com/erizet/TopshelfHosting/workflows/Build/badge.svg)
 # TopshelfHosting
 Do you want to write services the dotnet core way, using the [IHostedService](https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.hosting.ihostedservice?view=aspnetcore-2.1) interface? Do you also like the convenience of running windows services using [Topshelf?](https://github.com/Topshelf/Topshelf)
 Then use this extension method to run your generic host as a Topshelf service.
